@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Deployment
 metadata:
   name: goserver
   labels:
@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
       - name: goserver
-        image: cristianojsantos/hello-go:v3
-        env: 
+        image: cristianojsantos/hello-go:v4
+        env:
           - name: NAME
             value: "Cristiano"
           - name: AGE

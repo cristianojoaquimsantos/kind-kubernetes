@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
       - name: goserver
-        image: cristianojsantos/hello-go:arm64-v2
+        image: cristianojsantos/hello-go:v4
